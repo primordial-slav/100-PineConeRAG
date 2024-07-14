@@ -1,3 +1,4 @@
 01-data/**
 *.ipynb
 *.yaml
+__pycache__
