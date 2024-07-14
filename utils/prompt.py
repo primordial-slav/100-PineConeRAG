@@ -4,12 +4,13 @@ from langchain.schema import (
     AIMessage
 )
 from langchain_pinecone import PineconeVectorStore
-from langchain.chains import RetrievalQA  
+from langchain.chains import RetrievalQA
+import pprint
 
 
 class Prompt:
     def __init__(self,open_ai_model,pinecone_model,embedding_model,namespace):
-        self.pinecone_model = pinecone_model
+        #self.pinecone_model = pinecone_model
         self.open_ai_model = open_ai_model
         self.embedding_model = embedding_model
         self.namespace = namespace
@@ -58,5 +59,5 @@ class Prompt:
 
         res = self.open_ai_model(self.messages)
 
-        print(res.content)
+        pprint.pprint(res.content)
         return res.content
