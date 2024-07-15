@@ -3,3 +3,5 @@
 *.yaml
 __pycache__
 __/*
+00-lib/*
+*tar*
