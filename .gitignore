@@ -1,5 +1,5 @@
 01-data/**
-*.ipynb
+[0-9]**.ipynb
 *.yaml
 __pycache__
 __/*
