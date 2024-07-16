@@ -8,6 +8,8 @@ from langchain.schema import (
     HumanMessage,
     AIMessage
 )
+
+### TODO: RENAME THE FOLDER AND SORT OUT FUNCTIONS
 headers_to_split_on = [
     ("#", "Header 1"),
     ("##", "Header 2"),
